@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body{
+    background-color: #202020;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1.logo{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 5rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.container-input{
+    max-width: 480px;
+    margin: 14px 0;
+}
+
+.container-input span{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.slider{
+    appearance: none;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #dadada;
+    height: 18px;
+    outline: none;
+    margin-top: .5rem;
+}
+
+.button-cta{
+    height: 40px;
+    background-color: #777;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 2.5rem;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.container-password{
+    max-width: 480px;
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title{
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+.password{
+    height: 3.5rem;
+    background-color: rgba(0, 0, 0, 0.40);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: 1px solid rgb(50, 50, 50);
+    transition: .4s;
+}
+
+.password:hover{
+    transform: scale(1.05);
+}
+
+.tooltip{
+    color: #fff;
+    position: relative;
+    top: 1rem;
+    padding: 6px 8px;
+    background: rgb(15, 15, 15);
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.tooltip:hover{
+    transform: scale(1.05);
+}
+
+.container-password:hover .tooltip{
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
+
+.hide{
+    display: none;
+}
